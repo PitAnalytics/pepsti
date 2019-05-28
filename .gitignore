@@ -1,0 +1,4 @@
+# exclude everything
+app/vendor/*
+app/composer.json
+app/composer.lock

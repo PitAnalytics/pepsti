@@ -1,0 +1,23 @@
+{
+    "database":{
+
+        "database_type":"mysql",
+        "database_name":"PEPSTI",
+        "server":"localhost",
+        "username":"root",
+        "password":""
+        
+    },
+    "app":{
+
+        "url":"http://localhost/rastreo/public",
+        "name":"skeleton"
+
+    },
+    "google":{
+
+        "projectId":"none"
+
+    }
+
+}
