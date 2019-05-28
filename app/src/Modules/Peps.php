@@ -9,7 +9,7 @@ class Peps extends Connection implements TableInterface{
 
     public function qlik(){
 
-        $peps=$this->database->select("Peps",["Id","Descripcion","Presupuesto_Inicial","Gasto_Real","Rama"]);
+        $peps=$this->database->select("Peps",["Id","Pep","Descripcion","Presupuesto_Inicial","Gasto_Real","Rama"]);
 
         for ($i=0; $i <count($peps); $i++) { 
 
