@@ -37,6 +37,16 @@ class PedidosController extends Controller{
                 
     }
 
+    public function qlik($request,$response,$args){
+
+        $pedidos = $this->pedidos->qlik();
+        $response1 = $response->withJson($pedidos);
+        $response2 = $response1->withHeader("Access-Control-Allow-Origin","*");
+
+        return $response2;
+                
+    }
+
 }
 
 ?>

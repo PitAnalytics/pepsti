@@ -42,4 +42,24 @@ $container['pedidos']=function($container){
     };
 
 };
+//
+$container['proveedores']=function($container){
+
+    return function($database){
+
+        return new App\Modules\Proveedores($database);
+
+    };
+
+};
+//
+$container['rama']=function($container){
+
+    return function($database){
+
+        return new App\Modules\Rama($database);
+
+    };
+
+};
 ?>

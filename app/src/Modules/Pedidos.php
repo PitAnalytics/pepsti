@@ -11,7 +11,18 @@ class Pedidos extends Connection implements TableInterface{
 
     public function qlik(){
 
+        $pedidos = $this->database->select("Pedidos",["Pedido","Id_Pep","Importe","Numero_Proveedor","Descripcion"]);
 
+        for ($i=0; $i <count($pedidos); $i++) { 
+
+            $pedidos[$i]['Id_Pep']=intval($pedidos[$i]['Id_Pep']);
+            $pedidos[$i]['Importe']=floatval($pedidos[$i]['Importe']);
+            $pedidos[$i]['Numero_Proveedor']=intval($pedidos[$i]['Numero_Proveedor']);
+            $pedidos[$i]['Pedido']=intval($pedidos[$i]['Pedido']);
+            
+        }
+
+        return $pedidos;
         
     }
 
